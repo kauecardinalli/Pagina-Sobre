@@ -1,0 +1,337 @@
+@import url(/css/footer.css);
+@import url(/css/header.css);
+
+* {
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    color: #515151;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: clamp(8pt, 16pt, 20pt);
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: clamp(20pt, 40pt, 60pt);
+    letter-spacing: 1rem;
+    margin: auto;
+    color: #fff;
+    
+}
+
+h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: clamp(30pt, 55pt, 80pt);
+    font-weight: 400;
+    line-height: 1;
+    margin: auto;
+}
+
+h3 {
+    font-size: clamp(20pt, 40pt, 60pt);
+    margin: 0 0 1rem 0;
+    letter-spacing: 4px;
+    line-height: 1;
+    color: #515151;
+    margin: auto;
+}
+
+h4 {
+    font-size: clamp(6pt, 16pt, 20pt);
+    max-width: 80%;
+    line-height: 1.5rem;
+    margin: auto;
+    color: #515151;
+}
+
+p {
+    color: #4b4b4b;
+    font-size: clamp(6pt, 14pt, 18pt);
+    line-height: 1.8rem;
+    max-width: 80%;
+    margin: auto;
+}
+
+.a-CTA {
+    border-bottom: 2px solid #c4972e;
+    padding-bottom: 1%;
+    letter-spacing: 1.5px;
+    margin-bottom: 2%;
+    font-size: 1.1rem;
+}
+
+.cta {
+    margin-top: 5%;
+}
+
+.fa-asterisk,
+.a-CTA,
+h2 {
+    color: #c4972e;
+}
+
+.sobre,
+.lazer,
+.sobre .image-container,
+.lazer .image-container,
+.chales,
+.chales .chales-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quartos,
+.chales .box-image-container,
+.lazer-bg .text {
+    position: relative;
+}
+
+.quartos .text,
+.chales .box-image-container .box-image {
+    position: absolute;
+}
+
+.quartos .text,
+.lazer-bg .text,
+.chales .box-image-container,
+.chales .box-image-container .box-image {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chales .box-image-container,
+.chales .box-image-container .box-image {
+    width: 100%;
+}
+
+button,
+.chales .chales-image-container .image img {
+    cursor: pointer;
+}
+
+.dots .active {
+    background-color: #fff;
+}
+
+.sobre,
+.lazer {
+    padding: 60px;
+}
+
+.sobre .text,
+.lazer .text {
+    flex: 50%;
+    padding: 10% auto;
+}
+
+.sobre .image-container,
+.lazer .image-container {
+    flex: 50%;
+}
+
+.sobre .image,
+.lazer .image {
+    margin-left: 20px;
+}
+
+.sobre .text p {
+    margin: 3% auto 2%;
+}
+
+.quartos .image {
+    height: 350px;
+    background: url("/images/quartos\ banner.jpg") fixed bottom;
+    background-size: cover;
+}
+
+.chales {
+    padding: 5%;
+}
+
+.quartos .text {
+    margin: 1% auto;
+}
+
+.quartos .text h3 {
+    color: #fff;
+    line-height: 0;
+}
+
+.chales .text {
+    flex: 45%;
+}
+
+.chales .text h2 {
+    font-size: clamp(35pt, 75pt, 90pt);
+    line-height: 0.7;
+}
+
+.chales .text h4 {
+    margin: 5% auto 2%;
+}
+
+.chales .box-image-container {
+    height: 100%;
+}
+
+.chales .chales-image-container {
+    flex-wrap: wrap;
+    flex: 60%;
+}
+
+.chales .chales-image-container .image {
+    margin: 0 2% 2% 0;
+    flex: calc(50% - 40px);
+}
+
+.lazer-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+        url(/images/lazerbanner.jpg) fixed bottom;
+    background-size: cover;
+    height: 400px;
+}
+
+.lazer-bg .text h2 {
+    line-height: 5rem;
+    margin: auto;
+}
+
+.lazer-bg .text h3 {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin: auto;
+}
+
+.lazer {
+    display: flex;
+}
+
+.lazer h2 {
+    font-size: clamp(30pt, 60pt, 90pt);
+    margin: auto;
+    line-height: 0.7;
+    margin-bottom: 5%;
+}
+
+.lazer h3 {
+    font-size: clamp(20pt, 30pt, 40pt);
+}
+
+.lazer p {
+    margin: 3% auto 2%;
+}
+
+.lazer ul {
+    line-height: 2rem;
+    font-weight: bold;
+    margin: 4% 0 2%;
+    max-width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 1200px) {
+    .chales,
+    .sobre,
+    .lazer {
+        padding: 60px 40px;
+    }
+
+    .sobre .text,
+    .lazer .text {
+        padding: 0 32px 0 0;
+    }
+
+    .sobre .image-container,
+    .lazer .image-container {
+        align-items: center;
+    }
+
+    .chales .text {
+        padding: 0 0 0 32px;
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        padding: 0;
+    }
+
+    .sobre {
+        display: block;
+        padding-top: 50px;
+    }
+
+    .sobre .text,
+    .lazer .text {
+        padding: 0 0 40px;
+    }
+
+    .sobre .image-container .image1,
+    .lazer .image-container .image1 {
+        margin-left: 0;
+    }
+
+    .chales {
+        display: block;
+        padding: 60px 20px 60px 40px;
+    }
+
+    .chales .text {
+        padding: 20px 20px 0 0;
+    }
+
+    .lazer {
+        display: block;
+        padding: 30px 20px 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+        text-align: center;
+        margin: auto;
+    }
+
+    .chales .chales-image-container .image {
+        margin: 1%;
+        flex: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 576px) {
+    .chales-image-container {
+        margin: 8% auto;
+        display: flex;
+    }
+
+    .chales {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2% 0;
+    }
+
+    .chales .chales-image-container .image {
+        margin: 1%;
+        flex: calc(50% - 40px);
+    }
+}

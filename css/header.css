@@ -1,0 +1,147 @@
+header .navigation-bar a:hover,
+header nav.active .navigation-bar a:hover {
+    color: #c4972e;
+}
+
+header nav .navigation-bar .underline,
+.header-text .button button:hover {
+    background-color: #c4972e;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header ul {
+    transition: 0.3s;
+}
+
+header,
+header .navigation-bar a,
+.header-text {
+    position: relative;
+}
+
+header .navigation-bar .underline {
+    position: absolute;
+}
+
+header nav,
+header .navigation-bar a:hover .underline,
+header .navigation-bar li.active .underline {
+    width: 100%;
+}
+
+header .navigation-bar a {
+    color: #fff;
+}
+
+header nav,
+header .navigation-bar.show,
+header .navigation-bar a:hover .underline,
+header .navigation-bar li.active .underline {
+    left: 0;
+}
+
+header {
+    height: calc(100vh);
+    background-size: cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+        url(/images/Chales-Fazenda-das-Samambaias-scaled.jpg) fixed bottom;
+    padding: 0 0 5%;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+
+header nav .logo {
+    width: 10vw;
+}
+
+header .navigation-bar ul li {
+    flex: 1;
+    padding: 20px 10px;
+}
+
+header .navigation-bar a {
+    text-decoration: none;
+    transition: all 0.5s;
+    font-size: 1.4rem;
+}
+
+header .navigation-bar .underline {
+    height: 2px;
+    width: 0;
+    left: 50%;
+    bottom: -4px;
+    transition: all 0.3s;
+    display: block;
+}
+
+.header-text {
+    top: calc(25%);
+}
+
+.header-text h1,
+.header-text h2 {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 992px) {
+    header {
+        height: calc(100vh - 10px);
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+    }
+
+    header nav .logo {
+        width: 30vw;
+    }
+
+    .header-text h3 {
+        margin: 4% auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav .logo {
+        width: 35vw;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    header .navigation-bar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1rem;
+    }
+
+    header .navigation-bar ul li {
+        padding: 0.4rem;
+    }
+
+    .header-text {
+        top: calc(10%);
+    }
+}
