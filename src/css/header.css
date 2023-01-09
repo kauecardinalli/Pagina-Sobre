@@ -49,7 +49,7 @@ header {
     height: calc(100vh);
     background-size: cover;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-        url(/images/Chales-Fazenda-das-Samambaias-scaled.jpg) fixed bottom;
+        url("/src/images/Chales-Fazenda-das-Samambaias-scaled.jpg") fixed bottom;
     padding: 0 0 5%;
 }
 
