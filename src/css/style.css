@@ -34,7 +34,7 @@ h1 {
 
 h2 {
     font-family: "Dancing Script", cursive;
-    font-size: clamp(30pt, 55pt, 80pt);
+    font-size: clamp(30pt, 50pt, 80pt);
     font-weight: 400;
     line-height: 1;
     margin: auto;
@@ -315,6 +315,11 @@ button,
 }
 
 @media (max-width: 576px) {
+    .header-text h2,
+    .sobre h2 {
+        font-size: 4.5rem;
+    }
+
     .chales-image-container {
         margin: 8% auto;
         display: flex;
