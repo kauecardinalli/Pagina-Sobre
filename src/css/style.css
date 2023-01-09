@@ -155,7 +155,7 @@ button,
 
 .quartos .image {
     height: 350px;
-    background: url("/src/images/quartos\ banner.jpg") fixed bottom;
+    background: url('/images/quartos\ banner.jpg') fixed bottom;
     background-size: cover;
 }
 
@@ -201,7 +201,7 @@ button,
 
 .lazer-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-        url("/src//images/lazerbanner.jpg") fixed bottom;
+        url('/src//images/lazerbanner.jpg') fixed bottom;
     background-size: cover;
     height: 400px;
 }
