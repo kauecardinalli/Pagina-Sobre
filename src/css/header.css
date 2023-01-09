@@ -50,8 +50,7 @@ header {
     background-size: cover;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
         url(/src/images/Chales-Fazenda-das-Samambaias-scaled.jpg) fixed bottom;
-     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
-        url(https://kauecardinalli.github.io/montseny.github.io/src/images/bannerquartos.jpg) fixed bottom;   
+     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(https://kauecardinalli.github.io/montseny.github.io/src/images/Chales-Fazenda-das-Samambaias-scaled.jpg) fixed bottom;
     padding: 0 0 5%;
 }
 
